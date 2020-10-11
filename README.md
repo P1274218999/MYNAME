@@ -1,7 +1,6 @@
 # android_sld
 
 #### 介绍
-东汉恒态顺路带Android代码
 
 #### 软件架构
 MVP
