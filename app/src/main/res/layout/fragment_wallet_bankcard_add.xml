@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/common_toolbar" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@color/white">
+     <LinearLayout
+         android:layout_marginTop="@dimen/dp_10"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp_30"
+         android:gravity="center_vertical"
+         android:paddingLeft="@dimen/dp_20"
+         android:paddingRight="@dimen/dp_10"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="@dimen/dp_80"
+             android:layout_height="wrap_content"
+             android:text="持  卡  人:"
+             android:textSize="@dimen/sp_14"/>
+         <EditText
+             android:id="@+id/wallet_list_bankcard_cardholder"
+             android:textSize="@dimen/sp_14"
+             android:background="@null"
+             android:singleLine="true"
+             android:hint="请输入持卡人姓名"
+             android:textColorHint="#BCBFC1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     <include layout="@layout/common_show_line"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp_30"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:paddingLeft="@dimen/dp_20"
+         android:paddingRight="@dimen/dp_10">
+
+         <TextView
+             android:layout_width="@dimen/dp_80"
+             android:layout_height="wrap_content"
+             android:text="卡        号:"
+             android:textSize="@dimen/sp_14"/>
+         <EditText
+             android:id="@+id/wallet_list_bankcard_cardnumber"
+             android:textSize="@dimen/sp_14"
+             android:background="@null"
+             android:singleLine="true"
+             android:hint="请输入银行卡号"
+             android:textColorHint="#BCBFC1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     <include layout="@layout/common_show_line"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp_30"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:paddingLeft="@dimen/dp_20"
+         android:paddingRight="@dimen/dp_10">
+
+         <TextView
+             android:layout_width="@dimen/dp_80"
+             android:layout_height="wrap_content"
+             android:text="选择银行:"
+             android:textSize="@dimen/sp_14"/>
+         <TextView
+             android:id="@+id/wallet_list_bankcard_cardtype"
+             android:textSize="@dimen/sp_14"
+             android:background="@null"
+             android:singleLine="true"
+             android:hint="请选择开户所属银行"
+             android:textColorHint="#BCBFC1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     <include layout="@layout/common_show_line"/>
+<!--     <LinearLayout-->
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_height="@dimen/dp_30"-->
+<!--         android:gravity="center_vertical"-->
+<!--         android:orientation="horizontal"-->
+<!--         android:paddingLeft="@dimen/dp_20"-->
+<!--         android:paddingRight="@dimen/dp_10">-->
+
+<!--         <TextView-->
+<!--             android:layout_width="@dimen/dp_80"-->
+<!--             android:layout_height="wrap_content"-->
+<!--             android:text="手机号码:"-->
+<!--             android:textSize="@dimen/sp_14"/>-->
+<!--         <EditText-->
+<!--             android:id="@+id/wallet_list_bankcard_phone"-->
+<!--             android:textSize="@dimen/sp_14"-->
+<!--             android:background="@null"-->
+<!--             android:inputType="phone"-->
+<!--             android:singleLine="true"-->
+<!--             android:hint="请输入银行手机预留号码"-->
+<!--             android:textColorHint="#BCBFC1"-->
+<!--             android:layout_width="match_parent"-->
+<!--             android:layout_height="wrap_content"/>-->
+
+<!--     </LinearLayout>-->
+<!--     <include layout="@layout/common_show_line"/>-->
+<!--     <LinearLayout-->
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_height="@dimen/dp_30"-->
+<!--         android:gravity="center_vertical"-->
+<!--         android:orientation="horizontal"-->
+<!--         android:paddingLeft="@dimen/dp_20"-->
+<!--         android:paddingRight="@dimen/dp_10">-->
+
+<!--         <TextView-->
+<!--             android:layout_width="@dimen/dp_80"-->
+<!--             android:layout_height="wrap_content"-->
+<!--             android:text="验  证  码:"-->
+<!--             android:textSize="@dimen/sp_14"/>-->
+<!--         <EditText-->
+<!--             android:textSize="@dimen/sp_14"-->
+<!--             android:background="@null"-->
+<!--             android:singleLine="true"-->
+<!--             android:hint="请输入验证码"-->
+<!--             android:textColorHint="#BCBFC1"-->
+<!--             android:layout_width="@dimen/dp_100"-->
+<!--             android:layout_height="wrap_content"/>-->
+<!--         <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton-->
+<!--             android:id="@+id/wallet_list_bankcard_verificationCode"-->
+<!--             android:layout_width="@dimen/dp_80"-->
+<!--             android:layout_height="wrap_content"-->
+<!--             android:padding="@dimen/dp_5"-->
+<!--             android:gravity="center"-->
+<!--             android:text="获取验证码"-->
+<!--             android:textColor="@color/white"-->
+<!--             app:qmui_backgroundColor="@color/gray"-->
+<!--             app:qmui_borderColor="@null"-->
+<!--             app:qmui_isRadiusAdjustBounds="true"-->
+<!--             android:layout_gravity="center"/>-->
+<!--     </LinearLayout>-->
+<!--     <include layout="@layout/common_show_line"/>-->
+
+     <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+         android:id="@+id/wallet_list_bankcard_submit"
+         android:layout_marginRight="@dimen/dp_10"
+         android:layout_marginLeft="@dimen/dp_10"
+         android:layout_marginTop="@dimen/dp_30"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingBottom= "10dp"
+         android:paddingTop="10dp"
+         android:text="确认添加"
+         android:textColor="@color/white"
+         app:qmui_backgroundColor="@color/appTheme"
+         app:qmui_borderColor="@null"
+         app:qmui_isRadiusAdjustBounds="true"
+         android:layout_gravity="center"/>
+ </LinearLayout>
+</LinearLayout>

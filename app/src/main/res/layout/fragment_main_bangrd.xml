@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/help_click_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/sp_18"
+            android:text="请点击地图上的标注选择"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/help_route_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <com.dhht.sld.utlis.IconFontView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/icon_article"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/bottom_help_article"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="钥匙包包"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+                <include layout="@layout/common_show_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <com.dhht.sld.utlis.IconFontView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:gravity="center_vertical"
+                        android:text="@string/icon_quhuo"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/sp_26" />
+
+                    <TextView
+                        android:id="@+id/bottom_help_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="贵阳市 观山湖区 贵州金融城"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <com.dhht.sld.utlis.IconFontView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:text="@string/icon_shonghuo"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_26"/>
+
+                    <TextView
+                        android:id="@+id/bottom_help_end_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="贵阳市 观山湖区 贵州金融城"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/common_show_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="备注："
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/order_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="无"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+        <include layout="@layout/common_show_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="送货方式："
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/deliver_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_14"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="步行、汽车、驾车、飞机等"
+                android:textColorHint="#BCBFC1"/>
+        </LinearLayout>
+
+        <include layout="@layout/common_show_line"></include>
+
+        <!--
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/help_route_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/common_show_line"></include>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/help_cance"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_35"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp_50"
+                android:text="返回"
+                android:textColor="@color/black"
+                app:qmui_borderColor="@color/gray"
+                app:qmui_isRadiusAdjustBounds="true"/>
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/help_click_jiedan"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_35"
+                android:text="接单"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                app:qmui_backgroundColor="@color/appTheme"
+                app:qmui_borderColor="@null"
+                app:qmui_isRadiusAdjustBounds="true"/>
+        </LinearLayout>
+
+
+        <!--
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/help_people_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabIndicatorFullWidth="true"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/appTheme"/>
+        -->
+
+    </LinearLayout>
+
+
+</LinearLayout>

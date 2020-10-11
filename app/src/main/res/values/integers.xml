@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="main_bottom_time">300</integer>
+    <integer name="out_view_bottom">600</integer>
+    <integer name="test_time">3000</integer>
+</resources>

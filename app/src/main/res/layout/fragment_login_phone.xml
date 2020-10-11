@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_title"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_24"/>
+
+        <TextView
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_title_tip"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_14"/>
+
+        <com.dhht.sld.main.login.view.design.RongDivisionEditText
+            android:id="@+id/edit_phone"
+            app:type="phone"
+            app:rongTotalLength="11"
+            android:hint="请输入手机号"
+            android:textColorHint="@color/gray"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/submit_get_code"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/sp_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            app:qmui_backgroundColor="@color/appTheme"
+            app:qmui_borderColor="@null"
+            app:qmui_isRadiusAdjustBounds="true"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:checked="true"
+                android:textSize="@dimen/sp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_11"
+                android:textColor="@color/gray"
+                android:text="我已阅读并同意"/>
+            <TextView
+                android:id="@+id/user_reg_agreement"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_11"
+                android:textColor="@color/appTheme"
+                android:text="《会员注册协议》"/>
+            <TextView
+                android:id="@+id/user_privacy_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_11"
+                android:textColor="@color/appTheme"
+                android:text="《隐私协议》"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">顺路带</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="title_home">帮人带</string>
+    <string name="title_fabu">找人带</string>
+    <string name="title_user">个人中心</string>
+    <string name="agent_addr">地址</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">您没有授权</string>
+    <string name="cancel">取消</string>
+    <string name="setting">去设置</string>
+    <string name="title_activity_zhaoren_detail">ZhaorenDetailActivity</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="index_title_default">贵阳市</string>
+    <string name="submit_ok">提交</string>
+
+
+    <string name="login_title">欢迎使用顺路带</string>
+    <string name="action_login_in">登录</string>
+    <string name="login_title_tip">一路与你同行</string>
+
+    <string name="icon_back">&#xe675;</string>
+    <string name="icon_back_right">&#xe64b;</string>
+    <string name="icon_back_rand">&#xe614;</string>
+    <string name="icon_close">&#xe669;</string>
+    <string name="icon_gou1">&#xe666;</string>
+    <string name="icon_wenhao1">&#xe666;</string>
+    <string name="icon_article">&#xe729;</string>
+    <string name="icon_local">&#xe62d;</string>
+    <string name="icon_time">&#xe650;</string>
+    <string name="icon_quhuo">&#xe653;</string>
+    <string name="icon_shonghuo">&#xe652;</string>
+    <string name="icon_success">&#xe666;</string>
+    <string name="icon_refresh">&#xe600;</string>
+    <string name="icon_tishi">&#xe718;</string>
+    <string name="icon_add">&#xe662;</string>
+    <string name="icon_phone">&#xe663;</string>
+    <string name="icon_system_notification">&#xe661;</string>
+    <string name="icon_system_clear">&#xe639;</string>
+    <string name="icon_system_checkupdate">&#xe664;</string>
+    <string name="icon_system_exit">&#xe621;</string>
+    <string name="icon_activity_notification">&#xe654;</string>
+    <string name="icon_kefu_notification">&#xe61f;</string>
+    <string name="icon_wechat_pay">&#xe667;</string>
+    <string name="icon_zhufubao_pay">&#xe665;</string>
+    <string name="icon_checkbox_pay">&#xe63f;</string>
+
+    <string name="update_force_tip" translatable="false">你需要更新应用才能继续使用</string>
+    <string name="down_cancel" translatable="false">取消更新</string>
+    <string name="down_browser" translatable="false">浏览器下载</string>
+    <string name="update_text" translatable="false">立即更新</string>
+    <string name="update_later" translatable="false">稍后更新</string>
+    <string name="update_retry" translatable="false">重 试</string>
+    <string name="update_exit" translatable="false">取 消</string>
+    <string name="update_permission" translatable="false">请授权访问存储空间权限，更新后更流畅哦</string>
+    <string name="ok">OK</string>
+</resources>

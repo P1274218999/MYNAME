@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/dp_220">
+        <bitmap
+            android:src="@mipmap/splash_bg" />
+    </item>
+    <item
+        android:bottom="@dimen/dp_100">
+        <bitmap
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom"
+            android:src="@mipmap/start_logo" />
+    </item>
+</layer-list>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.dhht.sld.utlis.IconFontView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/black"
+            android:text="@string/icon_close"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <include
+        android:id="@+id/select_map"
+        android:layout_height="@dimen/dp_250"
+        android:layout_width="match_parent"
+        layout="@layout/fragment_base_map"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="@dimen/dp_8"
+        android:dividerHeight="1px"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:layout_below="@id/select_map"
+        android:divider="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

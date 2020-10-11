@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/gaode_map_receiving"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/receiving_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <com.dhht.sld.utlis.IconFontView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/appTheme"
+                android:textSize="@dimen/sp_24"
+                android:text="@string/icon_tishi"/>
+            <TextView
+                android:id="@+id/receiving_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:text="等待您去--"/>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/receiving_submit_phone"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingTop="@dimen/dp_6"
+                android:text="电话联系"
+                android:textColor="@color/white"
+                app:qmui_backgroundColor="@color/appTheme"
+                app:qmui_borderColor="@null"
+                app:qmui_isRadiusAdjustBounds="true"/>
+        </LinearLayout>
+
+        <include layout="@layout/common_show_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30">
+
+            <com.dhht.sld.utlis.IconFontView
+                android:id="@+id/receiving_content_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:text="@string/icon_quhuo"
+                android:textColor="@color/green"
+                android:textSize="@dimen/sp_50"/>
+
+            <TextView
+                android:id="@+id/receiving_article_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:text="其他"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <com.dhht.sld.utlis.IconFontView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/appTheme"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/icon_local"/>
+
+                <TextView
+                    android:id="@+id/receiving_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:text="---"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/gray"/>
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                    android:id="@+id/receiving_submit_daohang"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/dp_3"
+                    android:paddingBottom="@dimen/dp_3"
+                    android:text="导航"
+                    android:textColor="@color/white"
+                    app:qmui_backgroundColor="@color/green"
+                    app:qmui_borderColor="@null"
+                    app:qmui_isRadiusAdjustBounds="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/common_show_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_10">
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/receiving_cancel"
+                android:layout_width="@dimen/dp_130"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="取消订单"
+                android:textColor="@color/black"
+                app:qmui_borderColor="@color/gray"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/receiving_quhuo"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_width="@dimen/dp_130"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="确定取货"
+                android:textColor="@color/white"
+                app:qmui_backgroundColor="@color/appTheme"
+                app:qmui_borderColor="@null"
+                app:qmui_isRadiusAdjustBounds="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

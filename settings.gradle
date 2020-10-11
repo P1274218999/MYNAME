@@ -1,0 +1,8 @@
+rootProject.name='sld_dhht'
+include ':app'
+include ':mvp'
+include ':task'
+include ':annotation'
+include ':apt'
+include ':http'
+include ':config'

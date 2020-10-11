@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarBg"
+        android:minHeight="@dimen/dp_40"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="0dp">
+
+        <com.dhht.sld.utlis.IconFontView
+            android:id="@+id/toolbar_back"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_14"
+            android:text="@string/icon_back"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="-56dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:ellipsize="end"
+            android:maxEms="10"/>
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bar">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.dhht.sld.view.home.JiedanFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/jiedan" />
+
+    <fragment
+        android:id="@+id/navigation_fabu"
+        android:name="com.dhht.sld.view.fabu.Fadan"
+        android:label="@string/title_fabu"
+        tools:layout="@layout/fadan" />
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.dhht.sld.view.user.UserFragmengt"
+        android:label="@string/title_user"
+        tools:layout="@layout/user" />
+
+</navigation>

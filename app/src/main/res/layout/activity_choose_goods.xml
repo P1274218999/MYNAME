@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F3F3"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:gravity="left"
+                    android:text="不可帮带的物品"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.dhht.sld.utlis.IconFontView
+                    android:id="@+id/click_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/icon_tishi"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/main_bottom_fragment_bg"
+                android:layout_marginTop="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/article_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/main_bottom_fragment_bg"
+                android:padding="@dimen/sp_20"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传图片"
+                    android:textColor="@color/black"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/article_picture_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginBottom="@dimen/dp_8"/>
+                <TextView
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="请填写备注信息"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/text_article_info"
+                    android:layout_marginBottom="@dimen/sp_20"
+                    android:textSize="@dimen/sp_14"
+                    android:padding="@dimen/dp_10"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:minLines="8"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:background="#F0F3F3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:hint="请填物品的具体信息"/>
+            </LinearLayout>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/article_submit_do"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom= "10dp"
+                android:paddingTop="10dp"
+                android:text="@string/submit_ok"
+                android:textColor="@color/white"
+                app:qmui_backgroundColor="@color/appTheme"
+                app:qmui_borderColor="@null"
+                app:qmui_isRadiusAdjustBounds="true"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

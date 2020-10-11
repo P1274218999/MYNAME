@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preview_picture_title_bg"
+        android:minHeight="@dimen/dp_40"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="0dp">
+
+        <com.dhht.sld.utlis.IconFontView
+            android:id="@+id/toolbar_back"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_14"
+            android:text="@string/icon_back"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="-56dp"
+            android:layout_marginEnd="-56dp"
+            android:gravity="center"
+            android:text="预览图片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:ellipsize="end"
+            android:maxEms="10"/>
+        <TextView
+            android:id="@+id/toolbar_delete"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:ellipsize="end"
+            android:maxEms="10"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/preview_position"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:text="5/6"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:ellipsize="end"
+        android:maxEms="10"/>
+</RelativeLayout>

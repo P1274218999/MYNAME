@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/main_bottom_fragment_bg"
+        android:padding="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/choose_article"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:orientation="horizontal">
+
+            <com.dhht.sld.utlis.IconFontView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/icon_article"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/blue"/>
+
+            <TextView
+                android:id="@+id/find_article_text"
+                android:text="请选择物品"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.dhht.sld.utlis.IconFontView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="&#xe64b;"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/common_show_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.dhht.sld.utlis.IconFontView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/icon_quhuo"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/sp_28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/go_often_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_take_address"
+                    android:layout_marginBottom="@dimen/dp_3"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:layout_weight="1"
+                    android:text="在哪里取货"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/text_take_area"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:layout_weight="1"
+                    android:text="点击完善联系人信息" />
+
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/often_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appTheme"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="常用"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_12" />
+            </LinearLayout>
+            -->
+
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/common_show_line"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.dhht.sld.utlis.IconFontView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/icon_shonghuo"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/go_often_end"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_3"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="要带到哪里"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="点击填写送货地址"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/often_end"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:padding="5dp"
+                    android:textSize="@dimen/dp_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/appTheme"
+                    android:text="常用" />
+            </LinearLayout>
+            -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

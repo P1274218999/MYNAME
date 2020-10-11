@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_25"
+    android:paddingTop="5dp"
+    android:paddingRight="@dimen/dp_25"
+    android:paddingBottom="15dp">
+
+
+    <TextView
+        android:id="@+id/item_list_content_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="来自贵阳"
+        android:textColor="#00A1E9"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/item_list_content_img"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_content_from"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/caiwu2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/item_list_content_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="遇见显示"
+        android:textColor="#444444"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/item_list_content_img"
+        app:layout_constraintTop_toTopOf="@+id/item_list_content_img"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/item_list_content_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-3-18 15:33:40"
+        android:textColor="#ff999999"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_list_content_img"
+        app:layout_constraintStart_toStartOf="@+id/item_list_content_name"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_content_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/item_list_content_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="本人想吃云南的特产，但是因为走不开，没时间去，所以想找个人帮忙带点特产之内的东西，有人顺便的话请联系我。"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_list_content_img"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_content_img"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#F0F2F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_content_desc"
+        app:layout_constraintVertical_bias="0.003"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        android:layout_marginTop="8dp"
+        android:background="#00A1E9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="起点："
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/item_list_content_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不限"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        android:layout_marginTop="16dp"
+        android:background="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="终点："
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/item_list_content_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不限"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

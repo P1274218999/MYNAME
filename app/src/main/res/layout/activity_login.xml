@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.dhht.sld.utlis.IconFontView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:text="&#xe675;"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+   <FrameLayout
+       android:id="@+id/login_activtiy_fragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</LinearLayout>

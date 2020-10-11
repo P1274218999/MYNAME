@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/base_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/MapTopTip"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/cityInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="贵阳市观山湖区大关城市花园"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/cityInfoAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大关出个包裹是谷歌丫头阿斯达" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/location_click"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@mipmap/local_click"/>
+
+
+</RelativeLayout>

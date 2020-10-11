@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appTheme">#FF9D1F</color> <!-- 主题颜色 -->
+    <color name="colorPrimary">#FF9D1F</color>
+    <color name="colorPrimaryDark">#FF9D1F</color>
+    <color name="colorAccent">#FF9D1F</color>
+    <color name="toolbarBg">#ffffff</color>
+    <color name="textColorPrimary">#FF9D1F</color>
+    <color name="windowBackground">#F8F8F8</color>
+
+    <color name="cccccc">#2B2B2B</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#333333</color>
+    <color name="black6">#666666</color>
+    <color name="black9">#999999</color>
+    <color name="gray">#A5A7B2</color>
+    <color name="gray2">#e6e6e6</color>
+    <color name="blue">#4F97EF</color>
+
+    <color name="text_border_focused">#FDB890</color>
+    <color name="text_border_normal">#E5E5E5</color>
+</resources>

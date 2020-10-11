@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="@dimen/dp_3"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_15"
+
+                    android:background="@color/appTheme"/>
+                <TextView
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份认证"
+
+                    android:textSize="@dimen/sp_18"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/identity_idcard_before"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/identity_idcard"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_200"
+                    android:src="@mipmap/idcard"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击识别"
+                    android:textColor="#ffa3a0a0"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/identity_idcard_after"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/identity_img_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:src="@mipmap/img_identity_zheng"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/identity_img_reverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_120"
+                    android:src="@mipmap/img_identity_fan"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:text="真实姓名"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/identity_name"
+                    android:textSize="@dimen/sp_15"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="请输入姓名"
+                    android:textColorHint="#BCBFC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <include layout="@layout/common_show_line"/>
+            <LinearLayout
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:text="身份证号"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/identity_num"
+                    android:textSize="@dimen/sp_15"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="请输入身份证号"
+                    android:textColorHint="#BCBFC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <include layout="@layout/common_show_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="@dimen/dp_3"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_15"
+
+                    android:background="@color/appTheme"/>
+                <TextView
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人脸识别"
+
+                    android:textSize="@dimen/sp_18"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/identity_img_face"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_200"
+                    android:src="@mipmap/ic_identity_face"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击识别"
+                    android:textColor="#ffa3a0a0"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/identity_submit"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_50"
+                android:layout_marginBottom="@dimen/dp_70"
+                android:text="@string/submit_ok"
+                android:textColor="@color/white"
+                app:qmui_backgroundColor="@color/appTheme"
+                app:qmui_borderColor="@null"
+                app:qmui_isRadiusAdjustBounds="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

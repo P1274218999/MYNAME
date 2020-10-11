@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_view"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_100">
+
+    <com.dhht.sld.utlis.IconFontView
+        android:id="@+id/article_icon"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center"
+        android:text="@string/icon_article"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp_35"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/article_text_title"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="其他"
+        android:textSize="@dimen/sp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"/>
+
+</LinearLayout>

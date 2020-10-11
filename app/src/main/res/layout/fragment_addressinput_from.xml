@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="@dimen/dp_40"
+        android:theme="?attr/actionBarTheme" >
+
+        <com.dhht.sld.utlis.IconFontView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/dp_10"
+            android:text="@string/icon_back"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_20">
+
+        <TextView
+            android:id="@+id/address_title_tip"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_24"
+            android:text="请填写地址"/>
+    </LinearLayout>
+
+    <include layout="@layout/common_show_line"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/select_address_search"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/province_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击选择地址"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/area"
+                android:maxLines="2"
+                android:ellipsize="marquee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#BCBFC1"
+                android:textSize="@dimen/sp_14"
+                android:text="请选择地址..."/>
+        </LinearLayout>
+
+        <com.dhht.sld.utlis.IconFontView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:text="&#xe64b;"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/common_show_line"/>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:text="门牌号"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray"/>
+
+        <EditText
+            android:id="@+id/house_number"
+            android:textSize="@dimen/sp_14"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="例：4栋二单元1107"
+            android:textColorHint="#BCBFC1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/common_show_line"/>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:text="联系人"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:textSize="@dimen/sp_14"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="姓名"
+            android:textColorHint="#BCBFC1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/common_show_line"/>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:text="电话"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray"/>
+
+
+        <com.dhht.sld.main.login.view.design.RongDivisionEditText
+            android:id="@+id/phone"
+            app:type="phone"
+            app:rongTotalLength="11"
+            android:hint="请输入手机号"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_14"
+            android:textColorHint="#BCBFC1"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--
+        <EditText
+            android:id="@+id/phone"
+            android:textSize="@dimen/sp_14"
+            android:phoneNumber="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="手机号"
+            android:textColorHint="#BCBFC1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        -->
+    </LinearLayout>
+
+    <include layout="@layout/common_show_line"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/address_submit_do"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/submit_ok"
+            android:textColor="@color/white"
+            app:qmui_backgroundColor="@color/appTheme"
+            app:qmui_borderColor="@null"
+            app:qmui_isRadiusAdjustBounds="true"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

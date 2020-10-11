@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.dhht.sld.utlis.IconFontView
+            android:id="@+id/go_back"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"
+            android:text="@string/icon_close"/>
+
+        <LinearLayout
+            android:layout_margin="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/address_search_border"
+            android:orientation="horizontal">
+
+            <!-- 搜索框信息 -->
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入地址"
+                android:drawableLeft="@mipmap/icon_search"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/sp_16"
+                android:theme="@style/SpinKitView"
+                android:background="@color/gray2"/>
+        </LinearLayout>
+
+        <com.dhht.sld.utlis.IconFontView
+            android:id="@+id/icon_local"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/black"
+            android:text="@string/icon_local"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black"
+            android:text="全国"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address_search_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.dhht.sld.utlis.IconFontView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="center"
+            android:text="&#xe636;"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/often_address_click"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_80"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:text="常用地址"/>
+
+        <com.dhht.sld.utlis.IconFontView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="center"
+            android:text="@string/icon_local"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/map_choose_click"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:text="地图点选"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/address_search_recycler"
+        android:dividerHeight="1px"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:layout_below="@id/select_map"
+        android:divider="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

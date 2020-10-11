@@ -1,0 +1,71 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 首页Tablayout的样式 -->
+    <style name="TabLayoutTextStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:color">@color/appTheme</item>
+        <item name="tabIndicatorColor">@color/appTheme</item>
+    </style>
+
+    <!-- 首页loading加载的样式 -->
+    <style name="TransparentDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="helPeopleTabLayout">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="MainTabLayoutTextStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TabLayoutTextStyle_sp14" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="SplashActivityTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/bg_start_page</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 进度条 -->
+    <declare-styleable name="ProgressView">
+        <attr name="pvHeight" format="float" />
+        <attr name="pvFontSize" format="float" />
+        <attr name="pvVSpace" format="integer" />
+        <attr name="pvValue" format="integer" />
+    </declare-styleable>
+</resources>
